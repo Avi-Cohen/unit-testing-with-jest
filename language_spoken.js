@@ -35,7 +35,7 @@ const { languageInEnglish, alpha2Codes } = languageCodes;
   return `${capitalize(language)} is spoken in ${listOfPlaces.length} countries around the world`
 }
 
-export{
+module.exports = {
   capitalize,
   getAlpha2Code,
   countryExtractor,
