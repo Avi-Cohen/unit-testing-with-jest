@@ -373,4 +373,4 @@ const languageCodes = {
     ]
   }
   
-  export default languageCodes
+  module.exports = languageCodes
