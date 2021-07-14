@@ -1,0 +1,2 @@
+Two years ago I used to work in Allegiant Air and a major part of my my job was to write unit tests in JAVA using JUnit5.
+The purpose of this project is to be my first comeback to unit testing. This time using  Jest, and hopefully I will get to a point where my knowledge in jest is almost at the same level I acheived in JUnit5.
