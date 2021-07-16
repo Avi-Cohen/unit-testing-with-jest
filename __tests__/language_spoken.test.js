@@ -35,5 +35,22 @@ Note: The .toBe() matcher can be used to compare simple data types for equality 
 .toBeTruthy() is used to verify whether a value is truthy or not.
 .not is used before another matcher to verify that the opposite result is true
 .toContain() is used when we want to verify that an item is in an array. In this case, since the .not matcher is used, we are verifying that "Ice Cream" is NOT in the array.
-
 */
+
+test("correctly fetches a list of countries", (done) => {
+  //arrange
+  const inputLanguageCode = "es";
+  const expectedValue = "Argentina";
+
+  //act
+  countryListLookup(inputLanguageCode, (result) => {
+    //assertions
+    try {
+      //expect(undefined).toBeDefined(); => will fail the test
+      expect(result).toBeDefined(); // shold pass but NOT! (check API call)
+      done();
+    } catch (error) {
+      done(error);
+    }
+  });
+});
