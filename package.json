@@ -1,14 +1,14 @@
 {
   "name": "language_spoken",
   "version": "1.0.0",
-  "description": "",
+  "description": "a small project to practice Jest testing library",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "test": "jest __tests__/ --coverage"
   },
   "keywords": [],
-  "author": "",
+  "author": "Avi Cohen",
   "license": "ISC",
   "devDependencies": {
     "jest": "^27.0.6",
