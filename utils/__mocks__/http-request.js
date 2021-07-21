@@ -1,5 +1,7 @@
-const httpRequest = jest.fn(Promise.resolve({
+const httpRequest = jest.fn(
+  Promise.resolve({
     status: ``,
-    data: []
-  }));
-export default httpRequest;
+    data: [],
+  })
+);
+module.exports = httpRequest;

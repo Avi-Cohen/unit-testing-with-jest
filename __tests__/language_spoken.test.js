@@ -6,6 +6,9 @@ const {
   getResponse,
 } = require("../language_spoken");
 
+const httpRequest = require("../utils/http-request");
+jest.mock("../utils/http-request");
+
 test("convert array of country data objects to array of countries", () => {
   //arrange
   const inputObject = [
@@ -70,14 +73,41 @@ By using a catch block, we can capture the error value thrown and pass it to don
 test("correctly fetches a list of countries (ASYNC!)", async () => {
   //arrange
   const inputLanguageCode = "es";
-  const expectedValue ="Argentina";
+  const expectedValue = "Argentina";
   //act
   const actualValue = await countryListLookup(inputLanguageCode);
   //assertions
-  expect(actualValue).toContain(expectedValue);       
+  expect(actualValue).toContain(expectedValue);
 });
 
 /*
 With the inclusion of the async/await keywords, Jest will wait for any await statement to resolve before continuing on.
 */
 
+test("correctly fetches a list of countries3 - using mock", async () => {
+  //arrange
+  const inputLanguageCode = "jest";
+  const expectedValue = "CodeLand";
+  const resolvedValue = {
+    status: "MOCK",
+    data: [{ name: "CodeLand", capital: "Codecademy" }],
+  };
+  // TODO: Mock the first resolved value of httpRequest
+  httpRequest.mockResolvedValueOnce(resolvedValue);
+
+  //act
+  const actualValue = await countryListLookup(inputLanguageCode);
+  //assertions
+  expect(actualValue).toContain(expectedValue);
+});
+
+/*
+Let's Review!
+Great work! We have covered a lot over this lesson. Let’s take a moment to review:
+
+We have learned that Jest is an easy-to-use framework for testing in a JavaScript environment because it combines a test-runner with assertion methods like the expect() API.
+We also learned some of the basic syntax involved with creating a simple unit test, such as the test() function.
+After tackling basic unit tests we adventured into the realm of testing asynchronous code with Jest by using the done parameter to wait for asynchronous callbacks and the async/await keywords to wait for Promises to resolve
+Lastly, we learned how to mock functions using jest.fn() and make use of mocked modules with jest.mock() by mocking the Axios module.
+While we have learned a lot there is always more knowledge to be obtained and we encourage you to continue exploring Jest and its wonderful features!
+*/

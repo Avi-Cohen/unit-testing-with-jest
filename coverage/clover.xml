@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1626438548865" clover="3.2.0">
-  <project timestamp="1626438548865" name="All files">
-    <metrics statements="434" coveredstatements="424" conditionals="5" coveredconditionals="4" methods="6" coveredmethods="3" elements="445" coveredelements="431" complexity="0" loc="434" ncloc="434" packages="2" files="3" classes="3"/>
+<coverage generated="1626902274064" clover="3.2.0">
+  <project timestamp="1626902274064" name="All files">
+    <metrics statements="420" coveredstatements="412" conditionals="5" coveredconditionals="5" methods="5" coveredmethods="2" elements="430" coveredelements="419" complexity="0" loc="420" ncloc="420" packages="2" files="2" classes="2"/>
     <package name="unit-testing-with-jest">
-      <metrics statements="44" coveredstatements="34" conditionals="4" coveredconditionals="3" methods="5" coveredmethods="2"/>
+      <metrics statements="44" coveredstatements="36" conditionals="5" coveredconditionals="5" methods="5" coveredmethods="2"/>
       <file name="language_spoken.js" path="/Users/avicohen/AppleSeeds/Summer Recap/unit-testing-with-jest/language_spoken.js">
-        <metrics statements="44" coveredstatements="34" conditionals="4" coveredconditionals="3" methods="5" coveredmethods="2"/>
+        <metrics statements="44" coveredstatements="36" conditionals="5" coveredconditionals="5" methods="5" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -23,21 +23,21 @@
         <line num="15" count="0" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
         <line num="17" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="18" count="3" type="stmt"/>
-        <line num="19" count="3" type="cond" truecount="1" falsecount="0"/>
-        <line num="20" count="51" type="stmt"/>
-        <line num="21" count="51" type="stmt"/>
-        <line num="22" count="3" type="stmt"/>
-        <line num="23" count="3" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="19" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
         <line num="24" count="1" type="stmt"/>
         <line num="25" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="26" count="2" type="stmt"/>
-        <line num="27" count="2" type="stmt"/>
-        <line num="28" count="2" type="stmt"/>
-        <line num="29" count="2" type="cond" truecount="0" falsecount="1"/>
-        <line num="30" count="0" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
-        <line num="32" count="2" type="stmt"/>
+        <line num="26" count="3" type="stmt"/>
+        <line num="27" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="32" count="3" type="stmt"/>
         <line num="33" count="1" type="stmt"/>
         <line num="34" count="1" type="stmt"/>
         <line num="35" count="0" type="stmt"/>
@@ -53,24 +53,7 @@
       </file>
     </package>
     <package name="unit-testing-with-jest.utils">
-      <metrics statements="390" coveredstatements="390" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
-      <file name="http-request.js" path="/Users/avicohen/AppleSeeds/Summer Recap/unit-testing-with-jest/utils/http-request.js">
-        <metrics statements="14" coveredstatements="14" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="7" count="2" type="stmt"/>
-        <line num="8" count="2" type="stmt"/>
-        <line num="9" count="2" type="stmt"/>
-        <line num="10" count="2" type="stmt"/>
-        <line num="11" count="2" type="stmt"/>
-        <line num="12" count="2" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
-      </file>
+      <metrics statements="376" coveredstatements="376" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="languageCodes.js" path="/Users/avicohen/AppleSeeds/Summer Recap/unit-testing-with-jest/utils/languageCodes.js">
         <metrics statements="376" coveredstatements="376" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
